@@ -90,6 +90,33 @@ main ul li h3 {
   }
 }
 @media screen and (min-width: 922px) {
+  main .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.5em;
+    background-image: linear-gradient(to right, #321414 150px, rgba(70, 35, 35, 0.84) 100%);
+  }
+  main .container #img {
+    margin-right: 2em;
+  }
+  main .container .content {
+    color: #fff;
+    width: 50%;
+  }
+  main .container .content h1 {
+    font-size: 1.5em;
+  }
+  main .container .content span {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  main .container .content p {
+    border: 1px solid #fff;
+    width: 40%;
+    margin: 1em 0;
+  }
   main ul li {
     width: 30%;
     margin-right: 1em;

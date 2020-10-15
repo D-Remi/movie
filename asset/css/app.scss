@@ -98,23 +98,50 @@ main {
 @media screen and (min-width: 922px) {
  
   main {
-  ul {
-    li {
-      width: 30%;
-      margin-right: 1em;
-      padding: 0.5em;
-      a {
-        img {
-          width: 10em;
+    .container{
+      width:90%;
+      display: flex;
+      justify-content: center;
+      margin:0 auto;
+      padding:0.5em;
+      background-image: linear-gradient(to right, rgba(19.61%, 7.84%, 7.84%, 1.00) 150px, rgba(27.45%, 13.73%, 13.73%, 0.84) 100%);
+      #img{
+        margin-right:2em
+      }
+      .content{
+        color:#fff;
+        width:50%;
+        h1{
+          font-size: 1.5em;
+        }
+        span{
+          text-align: center;
+          font-size: 1.3em;
+        }
+        p{
+          border: 1px solid #fff;
+          width: 40%;
+          margin: 1em 0;
         }
       }
-      h3 {
-        font-size: 0.8em;
-        width: 80%;
+    }
+    ul {
+      li {
+        width: 30%;
+        margin-right: 1em;
+        padding: 0.5em;
+        a {
+          img {
+            width: 10em;
+          }
+        }
+        h3 {
+          font-size: 0.8em;
+          width: 80%;
+        }
       }
     }
   }
-}
 }
 
 @media screen and (min-width: 1200px) {

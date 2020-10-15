@@ -28,10 +28,10 @@ function showMovies(m) {
     let ul = document.getElementById('movie');
     const result = m.results;
     //delete the LI of UL
-    
-    for(let i = 0; i < 15; i++){
+    ul.innerHTML = ''
+    for(let i = 0; i < result.length; i++) {
         let html = `
-        <a href='movie.html'><img src="//image.tmdb.org/t/p/w220_and_h330_face/`+ result[i].backdrop_path+`"></a>
+        <a href='movie.html?`+ result[i].id +`'><img src="//image.tmdb.org/t/p/w220_and_h330_face/`+ result[i].backdrop_path+`"></a>
         <h3>`+ result[i].title +`</h3><br>
         <span>`+ result[i].release_date +`</span>
         `
